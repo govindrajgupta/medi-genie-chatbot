@@ -1,0 +1,40 @@
+Patient Name: John Doe
+Age: 45
+Sex: Male
+Symptoms: Persistent cough, fever, fatigue
+Diagnosis: Pneumonia
+Lab Tests: Chest X-ray, Blood Culture, CBC
+Prescribed Treatment: Antibiotics, Rest, Fluids
+
+Patient Name: Sarah Lee
+Age: 30
+Sex: Female
+Symptoms: Abdominal pain, nausea, vomiting
+Diagnosis: Gastritis
+Lab Tests: Endoscopy, Blood Test, Stool Test
+Prescribed Treatment: Antacids, Proton Pump Inhibitors, Dietary Changes
+
+Patient Name: Michael Smith
+Age: 55
+Sex: Male
+Symptoms: Chest pain, shortness of breath, sweating
+Diagnosis: Myocardial Infarction
+Lab Tests: ECG, Troponin Test, Angiography
+Prescribed Treatment: Aspirin, Beta-Blockers, Angioplasty
+
+Patient Name: Emily Johnson
+Age: 25
+Sex: Female
+Symptoms: Frequent urination, excessive thirst, weight loss
+Diagnosis: Type 1 Diabetes
+Lab Tests: Blood Glucose Test, HbA1c, Urinalysis
+Prescribed Treatment: Insulin Therapy, Dietary Management
+
+Patient Name: Robert Brown
+Age: 60
+Sex: Male
+Symptoms: Joint pain, stiffness, swelling
+Diagnosis: Rheumatoid Arthritis
+Lab Tests: Rheumatoid Factor Test, ESR, CRP
+Prescribed Treatment: DMARDs, NSAIDs, Physical Therapy
+

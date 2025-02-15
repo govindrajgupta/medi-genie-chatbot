@@ -13,6 +13,17 @@ type Props = {}
 
 const VectorDBPage = (props: Props) => {
     const [isUplaoding, setIsUplaoding] = useState(false)
+    const [indexname, setIndexName] = useState("")
+    const [namespace, setNameSpace] = useState("")
+    const onStartUpload = async () => {
+        const response = await fetch('api/updatedatabase', { method: 'POST', body: JSON.stringify({
+            indexname, 
+            namespace
+        })})
+        console.log(response);
+        // await processStreamedProgress(response);
+
+    }
   return (
     <main className='felx flex-col items-center justify-center min-h-screen p-24'>
         <Card>
@@ -35,19 +46,19 @@ const VectorDBPage = (props: Props) => {
                             <div className="grid gap-2"><Label>
                                 Index Name
                                 </Label>
-                                <Input placeholder='index name' disabled={isUplaoding} className='disabled:cursor-default'/>
+                                <Input value={indexname} onChange={e => setIndexName(e.target.value)} placeholder='index name' disabled={isUplaoding} className='disabled:cursor-default'/>
                                 </div>
                             <div className="grid gap-2">
                                 <Label>
                                 Name Space
                                 </Label>
-                                <Input placeholder='namespace' disabled={isUplaoding} className='disabled:cursor-default'/>
+                                <Input value={namespace} onChange={e => setNameSpace(e.target.value)} placeholder='namespace' disabled={isUplaoding} className='disabled:cursor-default'/>
                             </div>
 
                         </div>
 
                     </div>
-                    <Button variant={'outline'} disabled={isUplaoding} className='w-full h-full'>
+                    <Button onClick={onStartUpload} variant={'outline'} disabled={isUplaoding} className='w-full h-full'>
                         <span className='flex flex-row'>
 
                         <DatabaseIcon size={200} className='stroke-[#D90013]'/>
